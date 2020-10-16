@@ -1,0 +1,21 @@
+:root {
+  --title-color: var(--color-secondary-dark);
+  --title-font-size: 32px;
+  --title-text-align: center;
+}
+
+
+.main-title {
+  font-weight: 600;
+  font-size: var(--title-font-size);
+  line-height: 116%;
+  text-align: var(--title-text-align);
+  color: var(--title-color);
+}
+
+@media (min-width: 960px) {
+  :root {
+    --title-font-size: 56px;
+    --title-text-align: left;
+  }
+}

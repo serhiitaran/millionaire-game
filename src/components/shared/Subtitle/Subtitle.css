@@ -1,0 +1,22 @@
+:root {
+  --subtitle-color: var(--color-secondary-dark);
+  --subtitle-font-size: 18px;
+  --subtitle-text-align: center;
+}
+
+
+.main-subtitle {
+  font-weight: 600;
+  opacity: 0.5;
+  font-size: var(--subtitle-font-size);
+  line-height: 0;
+  text-align: var(--subtitle-text-align);
+  color: var(--subtitle-color);
+}
+
+@media (min-width: 960px) {
+  :root {
+		--subtitle-font-size: 32px;
+		--subtitle-text-align: left;
+  }
+}
