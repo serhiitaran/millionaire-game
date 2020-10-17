@@ -24,7 +24,7 @@ const GamePreview = (props) => {
         </div>
         <div className="game-preview__description">
           {subtitleText && <Subtitle text={subtitleText} />}
-          <Title text={titleText} />
+          <Title text={titleText} size="large" />
           <Button text={buttonText} />
         </div>
       </div>

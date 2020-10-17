@@ -1,11 +1,11 @@
 import React from 'react';
-import { GamePreview } from '../../components';
+import { Game } from '../../components';
 
 import '../../constants/constants.css';
 import './App.css';
 
 const App = () => (
-  <div className="app"><GamePreview type="gameOver" /></div>
+  <div className="app"><Game /></div>
 );
 
 export default App;

@@ -1,0 +1,120 @@
+:root {
+  --game-button-font-size: 14px;
+  --game-button-option-height: 56px;
+  --game-button-step-height: 32px;
+}
+
+.game-button {
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.game-button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  margin: auto;
+
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.game-button__wrapper {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+
+  font-size: var(--game-button-font-size);
+  color: var(--color-secondary-dark);
+
+  background-color: #ffffff;
+  border: 1px solid var(--color-secondary);
+  border-radius: 15px;
+}
+
+.game-button--option {
+  padding: 0 17px;
+}
+
+.game-button--step {
+  margin: 4px 0;
+  margin-bottom: 8px;
+  padding: 0 41px;
+}
+
+.game-button--step .game-button__wrapper {
+  justify-content: center;
+  width: var(--game-button-step-width);
+  height: var(--game-button-step-height);
+}
+
+.game-button--option .game-button__wrapper {
+  width: var(--game-button-option-width);
+  height: var(--game-button-option-height);
+  padding: 5px 24px;
+}
+
+.game-button--option.game-button--inactive {
+  cursor: pointer;
+}
+
+.game-button--option.game-button--inactive:hover:after {
+  border-bottom-color: var(--color-primary);
+}
+
+.game-button--option.game-button--inactive:hover .game-button__wrapper {
+  border-color: var(--color-primary);
+}
+
+.game-button--option .game-button-id {
+  margin-right: 10px;
+
+  color: var(--color-primary);
+}
+
+.game-button--selected:after {
+  border-bottom-color: var(--color-primary);
+}
+
+.game-button--selected .game-button__wrapper {
+  background-color: var(--color-primary-lighter);
+  border-color: var(--color-primary);
+}
+
+.game-button--correct:after {
+  border-bottom-color: var(--color-success);
+}
+
+.game-button--correct .game-button__wrapper {
+  background-color: var(--color-success-light);
+  border-color: var(--color-success);
+}
+
+.game-button--wrong:after {
+  border-bottom-color: var(--color-error);
+}
+
+.game-button--wrong .game-button__wrapper {
+  background-color: var(--color-error-light);
+  border-color: var(--color-error);
+}
+
+.game-button--finished .game-button__wrapper {
+  color: var(--color-secondary);
+}
+
+@media (min-width: 960px) {
+  :root {
+    --game-button-font-size: 20px;
+    --game-button-option-height: 72px;
+    --game-button-step-height: 40px;
+  }
+}

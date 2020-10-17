@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export */
 import GamePreview from './GamePreview';
+import Game from './Game';
 
-export { GamePreview };
+export { GamePreview, Game };

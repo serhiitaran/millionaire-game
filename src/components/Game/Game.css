@@ -1,0 +1,101 @@
+:root {
+  --game-main-bg-color: var(--color-secondary-light);
+  --game-sidebar-bg-color: var(--color-secondary-light);
+}
+
+.game {
+  height: 100%;
+}
+
+.game .main-title {
+  padding: 0 17px;
+}
+
+.game-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 25px 0;
+
+  background-color: var(--game-main-bg-color);
+}
+
+.game-options {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  row-gap: 8px;
+}
+
+.game-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 25px 0;
+
+  background-color: var(--game-sidebar-bg-color);
+}
+
+.game-sidebar--hidden {
+  display: none;
+}
+
+.game-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  :root {
+    --game-sidebar-bg-color: var(--color-white);
+  }
+  .game {
+    display: flex;
+  }
+
+  .game .button-icon {
+    display: none;
+  }
+
+  .game .main-title {
+    padding: 0;
+  }
+
+  .game-main {
+    justify-content: center;
+    width: 75%;
+    padding: 0 80px;
+  }
+
+  .game-options {
+    margin-top: 200px;
+
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+  }
+
+  .game-sidebar {
+    position: static;
+
+    justify-content: center;
+    width: 25%;
+  }
+
+  .game-sidebar--hidden {
+    display: flex;
+  }
+}

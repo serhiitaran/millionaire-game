@@ -1,21 +1,31 @@
 :root {
   --title-color: var(--color-secondary-dark);
-  --title-font-size: 32px;
+  --title-font-size-large: 32px;
+  --title-font-size-medium: 18px;
   --title-text-align: center;
 }
 
 
 .main-title {
   font-weight: 600;
-  font-size: var(--title-font-size);
   line-height: 116%;
   text-align: var(--title-text-align);
   color: var(--title-color);
 }
 
+.main-title--medium {
+  font-size: var(--title-font-size-medium);
+}
+
+.main-title--large {
+  font-size: var(--title-font-size-large);
+}
+
+
 @media (min-width: 960px) {
   :root {
-    --title-font-size: 56px;
+    --title-font-size-large: 56px;
+    --title-font-size-medium: 32px;
     --title-text-align: left;
   }
 }
