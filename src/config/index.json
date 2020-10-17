@@ -1,0 +1,367 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "money": "500"
+    },
+    {
+      "id": "level-2",
+      "money": "1,000"
+    },
+    {
+      "id": "level-3",
+      "money": "2,000"
+    },
+    {
+      "id": "level-4",
+      "money": "4,000"
+    },
+    {
+      "id": "level-5",
+      "money": "8,000"
+    },
+    {
+      "id": "level-6",
+      "money": "16,000"
+    },
+    {
+      "id": "level-7",
+      "money": "32,000"
+    },
+    {
+      "id": "level-8",
+      "money": "64,000"
+    },
+    {
+      "id": "level-9",
+      "money": "125,000"
+    },
+    {
+      "id": "level-10",
+      "money": "250,000"
+    },
+    {
+      "id": "level-11",
+      "money": "500,000"
+    },
+    {
+      "id": "level-12",
+      "money": "1,000,000"
+    }
+  ],
+  "questions": [
+    {
+      "id": "question-1",
+      "money": "500",
+      "question": "In the UK, the abbreviation NHS stands for National 'what' Service?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Humanity"
+        },
+        {
+          "id": "B",
+          "answer": "Health"
+        },
+        {
+          "id": "C",
+          "answer": "Honour"
+        },
+        {
+          "id": "D",
+          "answer": "Household"
+        }
+      ],
+      "answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "question-2",
+      "money": "1,000",
+      "question": "Which Disney character famously leaves a glass slipper behind at a royal ball?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Pocahontas"
+        },
+        {
+          "id": "B",
+          "answer": "Sleeping Beauty"
+        },
+        {
+          "id": "C",
+          "answer": "Cinderella"
+        },
+        {
+          "id": "D",
+          "answer": "Elsa"
+        }
+      ],
+      "answers": [
+        "C"
+      ]
+    },
+    {
+      "id": "question-3",
+      "money": "2,000",
+      "question": "What name is given to the revolving belt machinery in an airport that delivers checked luggage from the plane to baggage reclaim?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Hangar"
+        },
+        {
+          "id": "B",
+          "answer": "Terminal"
+        },
+        {
+          "id": "C",
+          "answer": "Concourse"
+        },
+        {
+          "id": "D",
+          "answer": "Carousel"
+        }
+      ],
+      "answers": [
+        "D"
+      ]
+    },
+    {
+      "id": "question-4",
+      "money": "4,000",
+      "question": "Which of these brands was chiefly associated with the manufacture of household locks?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Phillips"
+        },
+        {
+          "id": "B",
+          "answer": "Flymo"
+        },
+        {
+          "id": "C",
+          "answer": "Chubb"
+        },
+        {
+          "id": "D",
+          "answer": "Ronseal"
+        }
+      ],
+      "answers": [
+        "C"
+      ]
+    },
+    {
+      "id": "question-5",
+      "money": "8,000",
+      "question": "The hammer and sickle is one of the most recognisable symbols of which political ideology?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Republicanism"
+        },
+        {
+          "id": "B",
+          "answer": "Communism"
+        },
+        {
+          "id": "C",
+          "answer": "Conservatism"
+        },
+        {
+          "id": "D",
+          "answer": "Liberalism"
+        }
+      ],
+      "answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "question-6",
+      "money": "16,000",
+      "question": "Which toys have been marketed with the phrase 'Robots in Disguise'?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Bratz Dolls"
+        },
+        {
+          "id": "B",
+          "answer": "Sylvanian Families"
+        },
+        {
+          "id": "C",
+          "answer": "Hatchimals"
+        },
+        {
+          "id": "D",
+          "answer": "Transformers"
+        }
+      ],
+      "answers": [
+        "D"
+      ]
+    },
+    {
+      "id": "question-7",
+      "money": "32,000",
+      "question": "What does the word 'loquacious' mean?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Angry"
+        },
+        {
+          "id": "B",
+          "answer": "Chatty"
+        },
+        {
+          "id": "C",
+          "answer": "Beautiful"
+        },
+        {
+          "id": "D",
+          "answer": "Shy"
+        }
+      ],
+      "answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "question-8",
+      "money": "64,000",
+      "question": "Obstetrics is a branch of medicine particularly concerned with what?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Childbirth"
+        },
+        {
+          "id": "B",
+          "answer": "Broken bones"
+        },
+        {
+          "id": "C",
+          "answer": "Heart conditions"
+        },
+        {
+          "id": "D",
+          "answer": "Old age"
+        }
+      ],
+      "answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "question-9",
+      "money": "125,000",
+      "question": "In 'Doctor Who', what was the signature look of the fourth Doctor, as portrayed by Tom Baker?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Bow-tie"
+        },
+        {
+          "id": "B",
+          "answer": "Wide-brimmed hat"
+        },
+        {
+          "id": "C",
+          "answer": "Pinstripe suit"
+        },
+        {
+          "id": "D",
+          "answer": "Cape"
+        }
+      ],
+      "answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "question-10",
+      "money": "250,000",
+      "question": "Which of these religious observances lasts for the shortest period of time during the calendar year?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Ramadan"
+        },
+        {
+          "id": "B",
+          "answer": "Diwali"
+        },
+        {
+          "id": "C",
+          "answer": "Lent"
+        },
+        {
+          "id": "D",
+          "answer": "Hanukkah"
+        }
+      ],
+      "answers": [
+        "B"
+      ]
+    },
+    {
+      "id": "question-11",
+      "money": "500,000",
+      "question": "At the closest point, which island group is only|50 miles south-east of the coast of Florida?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Bahamas"
+        },
+        {
+          "id": "B",
+          "answer": "US Virgin Islands"
+        },
+        {
+          "id": "C",
+          "answer": "Turks and Caicos Islands"
+        },
+        {
+          "id": "D",
+          "answer": "Bermuda"
+        }
+      ],
+      "answers": [
+        "A"
+      ]
+    },
+    {
+      "id": "question-12",
+      "money": "1,000,000",
+      "question": "Construction of which of these famous landmarks was completed first?",
+      "options": [
+        {
+          "id": "A",
+          "answer": "Empire State Building"
+        },
+        {
+          "id": "B",
+          "answer": "Royal Albert Hall"
+        },
+        {
+          "id": "C",
+          "answer": "Eiffel Tower"
+        },
+        {
+          "id": "D",
+          "answer": "'Big Ben' Clock Tower"
+        }
+      ],
+      "answers": [
+        "D"
+      ]
+    }
+  ],
+  "currency": "$"
+}
