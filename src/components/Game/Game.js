@@ -1,50 +1,72 @@
+/* eslint-disable react/forbid-prop-types */
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './Game.css';
 
 import { GameButton, Title, ButtonIcon } from '../shared';
+import { getGameStepButtonStatus, getSidebarClasses, getGameOptionButtonStatus } from './helper';
 
-const Game = () => {
+const Game = (props) => {
+  const {
+    levels, currentLevel, currentQuestion, currency, onAnswerSelect, gameStatus, userAnswer,
+  } = props;
   const [sidebarVisible, setSidebarVisible] = useState(false);
 
   const onSidebarOpen = () => setSidebarVisible(true);
   const onSidebarClose = () => setSidebarVisible(false);
 
-  const sidebarClasses = sidebarVisible ? 'game-sidebar' : 'game-sidebar game-sidebar--hidden';
+  const sidebarClasses = getSidebarClasses(sidebarVisible);
+
+  const gameSteps = levels.map((level, index) => (
+    <GameButton
+      type="step"
+      value={currency + level.money}
+      key={level.id}
+      status={getGameStepButtonStatus(index, currentLevel)}
+    />
+  ));
+  const currentQuestionOptions = currentQuestion.options.map(({ id, answer }) => {
+    const onGameButtonClick = () => onAnswerSelect(id);
+    return (
+      <GameButton
+        onButtonClick={gameStatus === 'select' ? onGameButtonClick : null}
+        status={getGameOptionButtonStatus(id, userAnswer, gameStatus, currentQuestion.answers[0])}
+        type="option"
+        id={id}
+        value={answer}
+        key={id}
+      />
+    );
+  });
 
   return (
     <div className="game">
       <div className="game-main">
-
         <ButtonIcon type="menuOpen" onButtonClick={onSidebarOpen} />
-        <Title size="medium" text="How old your elder brother was 10 years before you was born, mate?" />
-
+        <Title size="medium" text={currentQuestion.question} />
         <div className="game-options">
-          <GameButton type="option" id="A" value="First" />
-          <GameButton type="option" id="B" value="Second" />
-          <GameButton type="option" id="C" value="Third" />
-          <GameButton type="option" id="D" value="Fourth" />
+          {currentQuestionOptions}
         </div>
       </div>
       <div className={sidebarClasses}>
         <ButtonIcon type="menuClose" onButtonClick={onSidebarClose} />
         <div className="game-steps">
-          <GameButton type="step" value="$ 1,000,000" />
-          <GameButton type="step" value="Second" />
-          <GameButton type="step" value="Third" />
-          <GameButton type="step" value="Fourth" />
-          <GameButton type="step" value="First" />
-          <GameButton type="step" value="Second" />
-          <GameButton type="step" value="Third" />
-          <GameButton type="step" value="Fourth" />
-          <GameButton type="step" value="First" />
-          <GameButton type="step" value="Second" />
-          <GameButton type="step" value="Third" />
-          <GameButton type="step" value="Fourth" />
+          {gameSteps}
         </div>
       </div>
-      <div />
+
     </div>
   );
+};
+
+Game.propTypes = {
+  levels: PropTypes.array.isRequired,
+  currency: PropTypes.string.isRequired,
+  currentLevel: PropTypes.number.isRequired,
+  currentQuestion: PropTypes.object.isRequired,
+  onAnswerSelect: PropTypes.func.isRequired,
+  gameStatus: PropTypes.string.isRequired,
+  userAnswer: PropTypes.string.isRequired,
 };
 
 export default Game;

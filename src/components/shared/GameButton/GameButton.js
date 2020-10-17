@@ -4,17 +4,21 @@ import './GameButton.css';
 
 const GameButton = (props) => {
   const {
-    type, status, value, id,
+    type, status, value, id, onButtonClick,
   } = props;
   return (
-    <div className={`game-button game-button--${type} game-button--${status}`}>
+    <button
+      onClick={onButtonClick}
+      className={`game-button game-button--${type} game-button--${status}`}
+      type="button"
+    >
       <div className="game-button__wrapper">
         <p>
           {id && <span className="game-button-id">{id}</span>}
           {value}
         </p>
       </div>
-    </div>
+    </button>
   );
 };
 
@@ -23,11 +27,13 @@ GameButton.propTypes = {
   status: PropTypes.string,
   value: PropTypes.string.isRequired,
   id: PropTypes.string,
+  onButtonClick: PropTypes.func,
 };
 
 GameButton.defaultProps = {
   id: null,
   status: 'inactive',
+  onButtonClick: () => {},
 };
 
 export default GameButton;

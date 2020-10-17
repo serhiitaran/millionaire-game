@@ -11,7 +11,7 @@ import { getGamePreviewText, getGamePreviewClasses } from './helper';
 import './GamePreview.css';
 
 const GamePreview = (props) => {
-  const { type, earned } = props;
+  const { type, earned, onGameStart } = props;
 
   const { titleText, subtitleText, buttonText } = getGamePreviewText(type, earned);
   const gamePreviewClasses = getGamePreviewClasses(type);
@@ -25,7 +25,7 @@ const GamePreview = (props) => {
         <div className="game-preview__description">
           {subtitleText && <Subtitle text={subtitleText} />}
           <Title text={titleText} size="large" />
-          <Button text={buttonText} />
+          <Button onButtonClick={onGameStart} text={buttonText} />
         </div>
       </div>
     </div>
@@ -34,11 +34,8 @@ const GamePreview = (props) => {
 
 GamePreview.propTypes = {
   type: PropTypes.string.isRequired,
-  earned: PropTypes.string,
-};
-
-GamePreview.defaultProps = {
-  earned: 0,
+  earned: PropTypes.string.isRequired,
+  onGameStart: PropTypes.func.isRequired,
 };
 
 export default GamePreview;

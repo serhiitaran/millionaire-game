@@ -10,6 +10,12 @@
 
   box-sizing: border-box;
   width: 100%;
+  background: none;
+  border: none;
+}
+
+.game-button:focus{
+  outline: none;
 }
 
 .game-button:after {
@@ -109,6 +115,15 @@
 
 .game-button--finished .game-button__wrapper {
   color: var(--color-secondary);
+}
+
+.game-button--active:after {
+  border-bottom-color: var(--color-primary);
+}
+
+.game-button--active .game-button__wrapper {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 @media (min-width: 960px) {

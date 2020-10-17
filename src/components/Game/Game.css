@@ -5,6 +5,7 @@
 
 .game {
   height: 100%;
+  box-sizing: border-box;
 }
 
 .game .main-title {
@@ -52,7 +53,7 @@
 
 .game-steps {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
