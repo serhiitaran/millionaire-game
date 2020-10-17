@@ -1,0 +1,45 @@
+:root {
+  --button-background-color-hover: var(--color-primary-light);
+  --button-background-color-inactive: var(--color-primary);
+  --button-background-color-pressed: var(--color-primary-dark);
+  --button-border-radius: 8px;
+  --button-color: var(--color-white);
+  --button-font-size: 14px;
+  --button-height: 48px;
+  --button-line-height: 16,24px;
+  --button-width: 288px;
+}
+
+.main-button {
+  width: var(--button-width);
+  height: var(--button-height);
+
+  font-weight: 600;
+  font-size: var(--button-font-size);
+  line-height: var(--button-line-height);
+  text-align: center;
+  color: var( --button-color);
+
+  background-color: var(--button-background-color-inactive);
+  border: none;
+  border-radius: var(--button-border-radius);
+  cursor: pointer;
+}
+
+.main-button:active {
+  background-color: var(--button-background-color-pressed);
+}
+
+@media (min-width: 960px) {
+  :root {
+    --button-border-radius: 12px;
+    --button-font-size: 20px;
+    --button-height: 64px;
+    --button-line-height: 23,2px;
+    --button-width: 296px;
+  }
+
+  .main-button:hover {
+    background-color: var(--button-background-color-hover);
+  }
+}

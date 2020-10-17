@@ -1,0 +1,80 @@
+.game-preview {
+  height: 100%;
+}
+
+.game-preview--start{
+  background: linear-gradient(to right bottom,var(--color-white) 50%, var(--color-primary-lighter) 50%);
+}
+
+.game-preview--over{
+  background: var(--color-secondary-light);
+}
+
+.game-preview__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 288px;
+  height: 100%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+
+.game-preview__description {
+  display: flex;
+  flex: 1 0 50%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.game-preview__description > *:last-child{
+  margin-top: auto;
+}
+
+@media (min-width: 375px) {
+  .game-preview__wrapper {
+    padding-top: 100px;
+    padding-bottom: 68px;
+  }
+
+  .game-preview__description {
+    margin-top: 39px;
+  }
+}
+
+@media (min-width: 600px) {
+  .game-preview__wrapper {
+    width: 400px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .game-preview__description {
+    margin-top: 50px;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .game-preview__wrapper {
+    flex-direction: row;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .game-preview__description {
+    display: block;
+    margin: 0;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .game-preview__wrapper {
+    width: 1280px;
+    padding: 0;
+  }
+}

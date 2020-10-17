@@ -1,0 +1,2 @@
+export const GAME_CHECK_ANSWER_DELAY = 2000;
+export const GAME_RESULT_DELAY = 2000;

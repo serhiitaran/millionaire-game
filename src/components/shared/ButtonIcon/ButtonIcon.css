@@ -1,0 +1,9 @@
+.button-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: calc(100% - 47px);
+  padding-right: 17px;
+
+  background: none;
+  border: none;
+}
