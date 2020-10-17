@@ -8,3 +8,6 @@
   `$ npm install`  
   
   `$ npm start`  
+
+### Deploy
+`https://serhiitaran.github.io/millionaire-game`
